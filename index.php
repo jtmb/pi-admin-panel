@@ -160,8 +160,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third">
         <h5>Scripts</h5>
-        <a href="?run=true" class="w3-button w3-black">click me</a>
-        <a href="https://www.w3schools.com" class="w3-button w3-black">Link Button</a>
+        <?php
+if ($_GET['run']) {
+  # This code will run if ?run=true is set.
+  exec("/var/www/myapp/test.sh");
+}
+?>
+        <a href="?run=true" class="w3-button w3-black">click me2</a>
+        <a href="https://www.w3schools.com" class="w3-button w3-black">test</a>
         <a href="https://www.w3schools.com" class="w3-button w3-black">Link Button</a>
         <p></p>
         <a href="https://www.w3schools.com" class="w3-button w3-black">Link Button</a>
