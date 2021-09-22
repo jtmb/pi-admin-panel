@@ -1,7 +1,7 @@
 <?php
 if ($_GET['run']) {
   # This code will run if ?run=true is set.
-  exec("button_bash_test/test.sh");
+  exec("/var/www/myapp/test.sh");
 }
 ?>
 
